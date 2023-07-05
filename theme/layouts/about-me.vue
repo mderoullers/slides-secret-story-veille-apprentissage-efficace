@@ -13,6 +13,7 @@
     social1?: string
     social2?: string
     social3?: string
+    qrcode?: string
   }>()
 
   const style = computed(() => handleBackground(props.imageSrc, false))
@@ -36,11 +37,14 @@
           </div>
 
           <div class="text-2xl space-y-2 mt-4">
-            <p class="social social-1">{{ social1 }}</p>
+            <p class="social social-1 text-blue"><uim-twitter/>{{ social1 }}</p>
             <p class="social social-2">{{ social2 }}</p>
             <p class="social social-3">{{ social3 }}</p>
           </div>
         </div>
+      </div>
+      <div absolute top-45 right-98  >
+        <img w-50 src="/slides/qrcode-linktree.png" alt="Linktree" />
       </div>
     </div>
   </div>
